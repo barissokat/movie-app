@@ -1,0 +1,90 @@
+.c-searchbar--wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red;
+  min-height: 50px;
+  display: flex;
+  justify-content: start;
+  color: #ffffff;
+  z-index: 10010;
+}
+
+.c-searchbar--search-term {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  flex-direction: row;
+}
+
+.c-searchbar--search-term input,
+.c-searchbar--search-term button {
+  margin-left: 10px;
+}
+
+.c-searchbar--button {
+  width: 80px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ebeae9;
+  cursor: pointer;
+  border-left: 1px solid #ebeae9;
+}
+
+.c-searchbar--filter {
+  width: 70px;
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #ebeae9;
+  cursor: pointer;
+}
+
+/* c-filter--wrapper */
+.c-filter--wrapper {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.c-filter--wrapper input,
+.c-filter--wrapper label {
+  margin-left: 5px;
+}
+
+.c-loader--wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #ff0000 #0000;
+  animation: l1 1s infinite;
+}
+
+@keyframes l1 {
+  to {
+    transform: rotate(0.5turn);
+  }
+}

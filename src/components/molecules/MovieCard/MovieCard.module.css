@@ -1,0 +1,121 @@
+.wrapper {
+  border: 1px solid;
+  border-color: #474646;
+  color: #ebeae9;
+  position: relative;
+  z-index: 10000;
+  height: 404px;
+  width: 100%;
+}
+
+.wrapperHover {
+  border-color: red;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  position: relative;
+  z-index: 10001;
+}
+
+.typeIcon {
+  position: absolute;
+  left: 32px;
+  top: 20px;
+}
+
+svg {
+  filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.5));
+}
+
+.body {
+  padding: 22px 34px 32px !important;
+  position: absolute;
+  z-index: 10002;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transition: background-color 500ms ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+}
+
+.type {
+  position: absolute;
+  right: 35px;
+  top: 26px;
+  font-family: "Azeret Mono", sans-serif;
+  font-size: 14px;
+  line-height: 1.5625em;
+  font-weight: 300;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  color: #bebebe;
+  text-transform: capitalize;
+}
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ebeae9;
+  font-size: 25px;
+  line-height: 1.2em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.moreWrapper {
+  padding: 0 0.6em !important;
+  color: #ebeae9;
+  border: 0;
+  --qode-line-color: currentColor;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out,
+    background-position 0.9s cubic-bezier(0.49, 0.9, 0.13, 0.89),
+    border-color 0.2s ease-out;
+  background: linear-gradient(
+      to right,
+      var(--qode-line-color) 0,
+      var(--qode-line-color) 100%
+    ),
+    linear-gradient(
+      to right,
+      currentColor 2px,
+      transparent 2px,
+      transparent calc(50% + 2px),
+      currentColor calc(50% + 2px)
+    );
+  background-size: 2px 100%, 210% 100%;
+  background-position: 0, 200%;
+  background-repeat: no-repeat;
+}
+
+.more {
+  margin-top: 23px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  text-decoration: none;
+  border-radius: 0;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+}
+
+.idWrapper {
+  position: absolute;
+  right: 35px;
+  bottom: 32px;
+  font-size: 12px;
+}
