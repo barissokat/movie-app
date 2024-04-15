@@ -8,7 +8,7 @@ The lists fetched from the service are held within **React Context**. Thus, the 
 
 While designing the components, an **atomic structure** was considered. Thus, the simplest components can be found in the atoms folder, while the complexity of the components increases, they are divided into folders such as molecules, organisms, templates.
 
-Different types of CSS coding have been given while styling the components. In addition to **globally defined CSS class** declarations, **module.css** and **styled components** have also been used.
+Different types of CSS coding have been given while styling the components. In addition to **globally defined CSS class** declarations, **Bootstrap**, **inline styling**, **module.css** and **styled components** have also been used.
 
 The main page is defined as App.js, while the Movie.js component is used for the detail page.
 
