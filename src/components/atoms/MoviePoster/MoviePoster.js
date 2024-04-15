@@ -1,4 +1,4 @@
-import PosterNotFound from '../PosterNotFound/PosterNotFound'
+import PosterNotFound from '../posterNotFound/PosterNotFound'
 import styles from './MoviePoster.module.css'
 
 const MoviePoster = ({ movie }) => {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import MoviePoster from '../../atoms/MoviePoster/MoviePoster'
+import MoviePoster from '../../atoms/moviePoster/MoviePoster'
 import styles from './MovieCard.module.css'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import { Link } from "react-router-dom"

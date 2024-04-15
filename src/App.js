@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { MoviesContext } from './context/MoviesContext'
 import MoviesGrid from './components/templates/MoviesGrid'
 import Welcome from './components/templates/Welcome'
-import ErrorMessage from './components/templates/ErrorMessage/ErrorMessage'
+import ErrorMessage from './components/templates/errorMessage/ErrorMessage'
 import './App.css'
 
 function App() {
