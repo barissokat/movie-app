@@ -14,6 +14,6 @@ import { createContext } from 'react'
  * without having to prop drill. Components can subscribe to this context and re-render whenever
  * the context's value changes.
  */
-const MoviesContext = createContext({ movies: {}, totalResults: '', response: '', error: '', setMovies: (m) => { } })
+const MoviesContext = createContext({ movies: undefined, totalResults: undefined, response: undefined, error: undefined, setMovies: (m) => { } })
 
 export { MoviesContext }

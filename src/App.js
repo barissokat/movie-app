@@ -6,7 +6,7 @@ import ErrorMessage from './components/templates/ErrorMessage/ErrorMessage'
 import './App.css'
 
 function App() {
-  const [movies, totalResults, response, error] = useContext(MoviesContext)
+  const {movies, totalResults, response, error} = useContext(MoviesContext)
 
   if (movies === undefined && response === undefined) {
     return (<Welcome />)
