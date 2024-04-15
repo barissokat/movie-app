@@ -1,6 +1,20 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **React.js** project. You can access the project page [here](https://movie-app-ruddy-eta.vercel.app/).
+
+In this project, **React Redux** is simply used for pagination. Real-time pagination has been implemented for pagination. With every page change, a new request is sent live. This way, it has been attempted to prevent data bloating locally.
+
+The lists fetched from the service are held within **React Context**. Thus, the latest state of the lists is preserved even when navigating to the detail page. The data has been fetched from [OMDbapi](https://www.omdbapi.com/).
+
+While designing the components, an **atomic structure** was considered. Thus, the simplest components can be found in the atoms folder, while the complexity of the components increases, they are divided into folders such as molecules, organisms, templates.
+
+Different types of CSS coding have been given while styling the components. In addition to **globally defined CSS class** declarations, **module.css** and **styled components** have also been used.
+
+The main page is defined as App.js, while the Movie.js component is used for the detail page.
+
+In using the page, the user must first search by movie title. Subsequently, movies will be listed in grid based on the search. More specific searches can be performed using filters. In addition, a detailed search can be performed based on the type of movie or year. Pressing the enter key after filling in the inputs will initiate the search.
+
+On the detail page, other information about the movie is available.
 
 ## Available Scripts
 
@@ -14,11 +28,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -28,16 +37,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
