@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 import NavigationButton from '../atoms/NavigationButton/NavigationButton'
-import MovieWrapper from '../organisms/MovieWrapper'
+import MovieCard from '../molecules/MovieCard/MovieCard'
 import { useContext } from 'react'
 import { MoviesContext } from '../../context/MoviesContext'
 
@@ -16,7 +16,7 @@ const MoviesGrid = () => {
         </div>
         {movies.map((movie, index) => (
           <div key={index} className='p-2 col-sm-6 col-sm-4 col-md-3 col-lg-2'>
-            <MovieWrapper movie={movie} />
+            <MovieCard movie={movie} />
           </div>
         ))}
         <div className='p-2 col-sm-6 col-sm-4 col-md-3 col-lg-2'>

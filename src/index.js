@@ -11,6 +11,22 @@ import ErrorPage from './pages/ErrorPage'
 import reportWebVitals from './reportWebVitals'
 import './index.css'
 
+/**
+ * Configures the browser router for the application using React Router.
+ *
+ * This router setup includes two main routes:
+ * 1. The root route ('/'):
+ *    - `element`: Renders the <App /> component when the user navigates to the base URL.
+ *    - `errorElement`: Renders the <ErrorPage /> component if there's an error during rendering of the <App /> component or its children.
+ * 
+ * 2. The movie detail route ('/movie/:imdbID'):
+ *    - `element`: Renders the <Movie /> component, designed to display detailed information about a movie.
+ *    - `loader`: Uses the `movieLoader` function to fetch data before rendering the <Movie /> component. This loader
+ *                function is expected to fetch movie details using the `imdbID` route parameter.
+ *
+ * This configuration ensures that the application has a clear navigational structure, with specific rendering behavior
+ * for the root and detailed movie pages. It also demonstrates the use of dynamic routes and data loading in React Router.
+ */
 const router = createBrowserRouter([
   {
     path: '/',

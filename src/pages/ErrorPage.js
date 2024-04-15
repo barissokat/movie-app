@@ -16,6 +16,11 @@ export default function ErrorPage() {
     fontSize: '32px'
   }
 
+/**
+ * Renders an error page component in the application.
+ *
+ * This component is designed to be displayed when an unexpected error occurs during the application's runtime.
+ */
   return (
     <div id="error-page" style={pageStyle}>
       <h1>Oops!</h1>
