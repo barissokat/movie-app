@@ -80,7 +80,7 @@ const AppLayout = (props) => {
   * promoting efficient data flow and reusability of state management logic.
   */
   return (
-    <MoviesContext.Provider value={[responseRef.current.Search, responseRef.current.totalResults, responseRef.current.Response, responseRef.current.Error, getSearchTermHandler]}>
+    <MoviesContext.Provider value={{ movies: responseRef.current.Search, totalResults: responseRef.current.totalResults, response: responseRef.current.Response, error: responseRef.current.Error, getSearchTermHandler }}>
       <div className='App'>
         <SearchBar totalResults={responseRef.current.totalResults} onGetSearchTerm={getSearchTermHandler} />
         <main>

@@ -6,7 +6,7 @@ import { MoviesContext } from '../../context/MoviesContext'
 
 const MoviesGrid = () => {
   const pageNumber = useSelector((state) => state.page.value)
-  const [movies, totalResults] = useContext(MoviesContext)
+  const { movies, totalResults } = useContext(MoviesContext)
 
   return (
     <div className='container-fluid mt-4'>

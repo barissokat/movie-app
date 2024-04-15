@@ -105,6 +105,7 @@ const SearchBar = ({ totalResults, onGetSearchTerm }) => {
     <div className='container-fluid c-searchbar--wrapper'>
       <div className='c-searchbar--search-term'>
         <input
+          data-testid='movie'
           ref={titleElem}
           type='text'
           id='title'
@@ -142,7 +143,7 @@ const SearchBar = ({ totalResults, onGetSearchTerm }) => {
           {filterVisible ? 'Clear' : 'Filter'}
         </div>
 
-        <div className='c-searchbar--button' onClick={searchHandler}>
+        <div data-testid='searchButton' className='c-searchbar--button' onClick={searchHandler}>
           <span>Search</span>
         </div>
       </div>
