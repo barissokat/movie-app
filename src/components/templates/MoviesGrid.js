@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
-import NavigationButton from '../atoms/NavigationButton/NavigationButton'
-import MovieCard from '../molecules/MovieCard/MovieCard'
+import NavigationButton from '../atoms/navigationButton/NavigationButton'
+import MovieCard from '../molecules/movieCard/MovieCard'
 import { useContext } from 'react'
 import { MoviesContext } from '../../context/MoviesContext'
 
