@@ -11,15 +11,15 @@ const MoviesGrid = () => {
   return (
     <div className='container-fluid mt-4'>
       <div className='row gap-0 row-gap-3'>
-        <div className='col-2'>
+        <div className='p-2 col-sm-6 col-sm-4 col-md-3 col-lg-2'>
           <NavigationButton direction='prev' disabled={pageNumber - 1 === 0} />
         </div>
         {movies.map((movie, index) => (
-          <div key={index} className='p-2 col-md-2'>
+          <div key={index} className='p-2 col-sm-6 col-sm-4 col-md-3 col-lg-2'>
             <MovieWrapper movie={movie} />
           </div>
         ))}
-        <div className='col-2'>
+        <div className='p-2 col-sm-6 col-sm-4 col-md-3 col-lg-2'>
           <NavigationButton direction='next' disabled={Math.ceil(totalResults / 10) === pageNumber} />
         </div>
       </div>
