@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Movie App
 
 This project is a **React.js** project. You can access the project page [here](https://movie-app-ruddy-eta.vercel.app/).
 
