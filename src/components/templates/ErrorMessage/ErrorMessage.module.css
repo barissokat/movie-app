@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 60px);
   color: white;
   display: flex;
   justify-content: center;

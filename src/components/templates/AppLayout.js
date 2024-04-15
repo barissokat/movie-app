@@ -6,7 +6,6 @@ import Loading from '../../components/templates/LoadingSpinner'
 import { useDispatch, useSelector } from 'react-redux'
 import { resetPage } from '../../redux/pageSlice'
 import { MoviesContext } from '../../context/MoviesContext'
-import { redirect } from 'react-router-dom'
 
 const AppLayout = (props) => {
   const responseRef = useRef([])
@@ -26,10 +25,10 @@ const AppLayout = (props) => {
   }, [pageNumber])
 
 
-  const getSearchTermHandler = async (searchTerm) => {
+  const getSearchTermHandler = async (queryString) => {
     dispatch(resetPage())
     setLoading(true)
-    queryRef.current = searchTerm
+    queryRef.current = queryString
     fetchMoviesByQuery(queryRef.current, 1).then(response => {
       responseRef.current = response
       setLoading(false)

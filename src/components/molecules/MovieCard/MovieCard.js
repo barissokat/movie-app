@@ -22,8 +22,7 @@ const MovieCard = ({ movie }) => {
             <h5 className={styles.title}>{movie.Title}</h5>
             <div className={styles.moreWrapper}>
               <Link to={`movie/${movie.imdbID}`}>
-                <div className={styles.more}>
-                  Read More</div>
+                <div className={styles.more}>Read More</div>
               </Link>
             </div>
             <div className={styles.idWrapper}>

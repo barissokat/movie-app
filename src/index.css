@@ -8,8 +8,8 @@ body {
   background-color: #121212;
   overflow: hidden;
   color: #ebe8e8;
-  height: 100vh;
-  overflow-y: scroll;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
 }
 
 body::-webkit-scrollbar-track {
